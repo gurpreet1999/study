@@ -4,6 +4,7 @@ import "./App.css"
 import HomePage from './HomePage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './Navbar';
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
       <BrowserRouter>
       <Navbar/>
+      <Toaster />
         
           <Routes>
             <Route path="/" element={<HomePage/>} />

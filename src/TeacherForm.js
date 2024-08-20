@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './TeacherForm.css';
-
+import toast from 'react-hot-toast';
 
 import emailjs from '@emailjs/browser'
 
@@ -14,17 +14,18 @@ const TeacherForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_s3vtvte', 'template_eot7vtk', form.current, {
-        publicKey: 'qMZoTQr1w8Mk93wWy',
+      .sendForm('service_v4jh6ei', 'template_pwcw1et', form.current, {
+        publicKey: 'CrthvxJQ4GGdUhYnc',
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          toast.success('Your Response has been recorded Successfully!')
           window.location.href = 'https://payu.in/web/564AEF2740D5845606E600F7DB19B8D1';
           form.current.reset(); 
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          toast.error('Server Error! Please try again after sometime!')
+          console.log(error)
         },
       );
   };
