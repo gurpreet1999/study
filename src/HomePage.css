@@ -84,9 +84,14 @@
   align-items: center;
   margin: 50px 0;
 }
-
+ .fa-face-smile{
+  font-size: 40px;
+}
 .achievement-item {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .achievement-icon {
@@ -105,9 +110,10 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
-.footer-logo img {
-  max-width: 150px;
+.footer-logo h1{
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 
 .footer-columns {
@@ -131,8 +137,14 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+
+
+
+
+
   .achievements-container {
     flex-direction: column;
+    gap: 45px;
   }
 
   .footer-columns {
@@ -142,5 +154,11 @@ footer {
 
   .footer-column {
     margin-bottom: 20px;
+  }
+  .achievement-item{
+    gap: 5px;
+  }
+  .hero-text h1{
+    font-size: 24px;
   }
 }

@@ -27,12 +27,12 @@ const HomePage = () => {
           <i className="achievement-icon fa fa-university"></i>
           <p>Our Students are from</p>
           <h3>2,589</h3>
-          <p>Schools of India & Abroad</p>
+          <p>Schools of India </p>
         </div>
         <div className="achievement-item">
-        <i class="fa-regular fa-face-smile fa-2xl"></i>
+        <i class="fa-regular fa-face-smile"></i>
           <p>Inquiries Posted by</p>
-          <h3>138,352</h3>
+          <h3>10,352</h3>
           <p>Students</p>
         </div>
       </div>
