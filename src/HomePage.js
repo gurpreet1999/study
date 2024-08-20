@@ -11,8 +11,10 @@ const HomePage = () => {
           <h1>LOOKING FOR A HOME TUTOR?</h1>
           <h1>LOOKING FOR AN ONLINE TUTOR?</h1>
           <p>Studyhelpline is here to help.</p>
-        
-          <button className="contact-button">Contact Us</button>
+         
+  
+
+<a href="https://wa.me/9250192507" target="_blank"> <button className="contact-button">Contact Us</button></a>
         </div>
       </div>
       <div className="achievements">
