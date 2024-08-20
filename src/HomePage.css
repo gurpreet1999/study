@@ -11,38 +11,7 @@
   }
   
   /* Navbar styles */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .navbar .logo a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar .nav-links li a:hover {
-    text-decoration: underline;
-  }
+
   
   /* Hero Section styles */
   .hero-section {
@@ -103,3 +72,75 @@
     }
   }
   
+
+  /* achievments */
+
+
+
+  /* Container styling */
+.achievements-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.achievement-icon {
+  font-size: 50px;
+  color: #333;
+}
+
+h3 {
+  color: #4da6ff;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.footer-column h4 {
+  color: #4da6ff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin: 5px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .achievements-container {
+    flex-direction: column;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+}
